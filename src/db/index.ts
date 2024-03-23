@@ -7,7 +7,6 @@ export const createDbConnection = () => {
     if (error) {
       throw error;
     } else {
-      console.log("Connection with SQLite has been established");
     }
   });
   return db;
