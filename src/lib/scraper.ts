@@ -4,9 +4,7 @@ dotenv.config({ path: ".env.dev" });
 
 const { BRIGHTDATA_USERNAME, BRIGHTDATA_PASSWORD, BRIGHTDATA_HOST } = process.env;
 export const scraper = async () => {
-  if (!BRIGHTDATA_USERNAME || !BRIGHTDATA_PASSWORD) throw Error("no credentials");
-  console.log(BRIGHTDATA_USERNAME);
-  console.log(BRIGHTDATA_PASSWORD);
+  if (!BRIGHTDATA_USERNAME || !BRIGHTDATA_PASSWORD) throw Error("Invalid credentials");
   let page = null;
   let browser = null;
   try {
