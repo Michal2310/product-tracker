@@ -2,7 +2,7 @@
   "name": "product-tracker",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "michal2310pl@gmail.com <michal2310pl@gmail.com>",
+  "author": "Michał Kozłowski",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.8",
