@@ -1,6 +1,4 @@
 import { launch } from "puppeteer-core";
-import dotenv from "dotenv";
-dotenv.config({ path: ".env.dev" });
 
 const { BRIGHTDATA_USERNAME, BRIGHTDATA_PASSWORD, BRIGHTDATA_HOST } = process.env;
 export const scraper = async () => {

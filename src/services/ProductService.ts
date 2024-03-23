@@ -1,7 +1,6 @@
 import { scraper } from "../lib/scraper";
 import { Product } from "../models/Product";
-import { createDbConnection } from "../db";
-import { saveProductPrice, saveProductsToDatabase } from "./ProductDatabaseService";
+import { saveProductsToDatabase } from "./ProductDatabaseService";
 import { scrapeAmazonForProducts } from "./ScraperService";
 
 export const getProducts = async (searchQuery: string): Promise<Product[] | Error> => {

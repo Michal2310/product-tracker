@@ -3,7 +3,6 @@ import "dotenv/config";
 import router from "./src/routes/products";
 import { createDbConnection } from "./src/db/index";
 
-
 // Define a function to initialize your database
 async function initializeDatabase() {
   try {
