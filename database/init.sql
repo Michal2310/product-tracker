@@ -1,16 +1,17 @@
-CREATE TABLE products_search (
+CREATE TABLE products (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     image TEXT,
     url TEXT,
-    price FLOAT,
     createdAt DATETIME,
-    searchQuery TEXT
+    searchQuery TEXT,
+    tracked BOOLEAN DEFAULT 0
 );
 
-CREATE TABLE tracked_products (
+CREATE TABLE product_prices (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    createdAt DATETIME,
-    tracked BOOLEAN
+    productId INTEGER,
+    price FLOAT,
+    priceDate DATETIME,
+    FOREIGN KEY(productId) REFERENCES products(id)
 );
